@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">        
+    <title>Gamer Republic</title>
+</head>
+<body>
+    <section>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-dark pt-3 pb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="#">Gamer Republic</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#acceuil">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#who">Qui sommes nous ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#jeux">Jeux</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#console">Console</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#access">Accessoire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#goodie">Goodies</a>
+                        </li>  
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                    <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success card-1" data-toggle="modal" data-target="#exampleModal">
+        <p><i class="fas fa-shopping-cart"></i> <span id="nombre-achat"></span> éléments au panier - <span id="total-achat"></span>$</p>
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Panier</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="liste-achat">  
+            <!--<div class="container">
+                    <div class="row">
+                    <div class="col-4"><img src="" alt="" class="img-fluid rounded-circle élémentImg" style="width: 60%;"></div>
+                    <div class="col-4"><h4 class="élémentNom"></h4><p class="élémentPrix"></p></div>
+                    <div class="col-4"><button class="btn btn-outline-danger boutonRetirer"><i class="fas fa-trash fa-2"></i></button></div>
+                    </div>
+                </div>-->
+            </div>
+            <h3 class="text-center">Total: <span id="tatol-achat"></span>$</h3>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary text-danger" id="effacer">Tout effacer</button>
+              <button type="button" class="btn btn-outline-success" id ="confirmer">Confirmer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                     </form>
+                </div>
+                </div>
+              </nav>
+    </section>
+    <section id="acceuil" class="pb-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="caroussel1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Equipement de qualité Pros</h3>
+                        <p>
+                            Les équipes de joueurs professionnels préfère les équipement fournis par la Republic of Gamer Foundation. Les 
+                            teams de joueurs Splyce, Gamers Origin, Team Liquid ou encore Root Gaming font partis de nos partenaires. 
+                        </p>
+                    </div> 
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="carroussel2.png" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Partenaire de l'E-Sport</h3>
+                        <p>
+                            La Gamer Republic Foundation participe a l'essor de l'E-Sport en Afrique. Nous organisons régulièrement des tournois
+                            un peu partout sur le continent. Notre but à termes est de démocratiser la profession de joueurs pros sur le continent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="py-5" id="who">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-sm-12">
+                    <h2 class="pb-3">Qui sommes <span class="text-success">Nous</span> ?</h2>
+                    <p>
+                        Nous sommes une structure ayant son siège social en Afrique ayant pour but de répandre notre passion (le jeu vidéo) auprès d'un maximum de jeunes
+                        africains. Nous le faisons notamment en offrant des formations aux jeunes dans les métiers du jeu vidéo(modéliseur 3D, programmeur 3D, Level Designer ...), 
+                        et en supportant les iniatives dans le secteur comme les organisatons de compétitions d'e-sport.
+                    </p>
+                    <button class="btn btn-outline-success card-1">En savoir plus sur nous</button>
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                    <img src="jeu-video.jpg" alt="" class="card-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section class="py-5" style="background-color: rgb(182, 187, 194);">
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-12">
+                    <h1 style="text-align: center;">Notre <span class="text-success">Boutique</span></h1>
+                </div>
+                
+            </div>
+            <div class="row mx-auto">
+                <div class="col-12 py-4">
+                    <form>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend ">
+                            <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder='item....' id="search-item">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-sm-6">
+                    <a href="#jeux" class="btn btn-outline-dark btn-block card-1">Jeux</a>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <a href="#console" class="btn btn-outline-dark btn-block card-1">Consoles</a>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <a href="#access" class="btn btn-outline-dark btn-block card-1">Accessoires</a>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <a href="#goodie" class="btn btn-outline-dark btn-block card-1">Goodies</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="jeux" class="py-5" style="background-color: rgb(219, 223, 230);">
+        <div class="container">
+            <h3 class="pb-4">Nos derniers <span class="text-success"> Jeux</span> tendances</h3>
+            <div class="row">
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img id ="image" class="card-img-top élémentImg" src="witcher.jpg" alt="Card image cap">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">The Witcher 3 GOTY</h5>
+                                    <p>Prix : <span class="élémentPrix">49.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img class="card-img-top élémentImg" src="cyber.jpg" alt="Card image cap" style="height: 22rem;">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Cyberpunk 2077</h5>
+                                    <p>Prix : <span class="élémentPrix">59.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img class="card-img-top élémentImg" src="Zelda.jpg" alt="Card image cap" style="height: 23rem;">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Zelda BOTW</h5>
+                                    <p>Prix : <span class="élémentPrix">40.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="console" class="py-5" style="background-color: rgb(182, 187, 194);">
+        <div class="container">
+            <h3 class="pb-4">Nos dernières <span class="text-success"> Consoles</span> tendances</h3>
+            <div class="row">
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img id ="image" class="card-img-top élémentImg" src="switch.jpg" alt="Card image cap">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Nitendo Switch</h5>
+                                    <p>Prix : <span class="élémentPrix">129.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img class="card-img-top élémentImg" src="ps4.jpg" alt="Card image cap" style="height: 22rem;">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Playstation 4</h5>
+                                    <p>Prix : <span class="élémentPrix">159.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img class="card-img-top élémentImg" src="xboxone.jpg" alt="Card image cap" style="height: 23rem;">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">XBOX One</h5>
+                                    <p>Prix : <span class="élémentPrix">189.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="access" class="py-5" style="background-color: rgb(219, 223, 230);">
+        <div class="container">
+            <h3 class="pb-4">Nos derniers <span class="text-success"> Accessoires</span> tendances</h3>
+            <div class="row">
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img id ="image" class="card-img-top élémentImg" src="Manette PS4.jpg" alt="Card image cap">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Manette PS4</h5>
+                                    <p>Prix : <span class="élémentPrix">49.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img class="card-img-top élémentImg" src="camouflage.jpg" alt="Card image cap" style="height: 22rem;">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Manette XBOX (Camouflage)</h5>
+                                    <p>Prix : <span class="élémentPrix">59.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img class="card-img-top élémentImg" src="elite.jpg" alt="Card image cap" style="height: 23rem;">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Manette XBOX Elite</h5>
+                                    <p>Prix : <span class="élémentPrix">59.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="goodie" class="py-5" style="background-color: rgb(182, 187, 194);">
+        <div class="container">
+            <h3 class="pb-4">Nos derniers <span class="text-success"> Goodies</span> tendances</h3>
+            <div class="row">
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img id ="image" class="card-img-top élémentImg" src="mario.jpg" alt="Card image cap">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Figurines Mario</h5>
+                                    <p>Prix : <span class="élémentPrix">29.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img class="card-img-top élémentImg" src="cloud.jpg" alt="Card image cap" style="height: 22rem;">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Figurine Cloud(FF7)</h5>
+                                    <p>Prix : <span class="élémentPrix">39.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="card card-2">
+                        <img class="card-img-top élémentImg" src="link.jpg" alt="Card image cap" style="height: 23rem;">
+                        <div class="card-body bg-dark text-light">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title text-center élémentNom">Figurine Link(BOTW)</h5>
+                                    <p>Prix : <span class="élémentPrix">40.99</span>$</p>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-success card-1 bouton-achat">Ajouter au Panier</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  <!-- bootstrap js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
